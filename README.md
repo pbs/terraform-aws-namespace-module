@@ -6,7 +6,7 @@
 
 ```hcl
 module "namespace" {
-    source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.1"
+    source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 }
 ```
 
@@ -44,7 +44,7 @@ Integrate this module like so:
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.1"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   # Tagging Parameters
   organization = var.organization
@@ -60,7 +60,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.1"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "private"
   name = "example.private"
@@ -79,7 +79,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.1"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "public"
   name = "example.org"
@@ -98,7 +98,7 @@ module "namespace" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.1`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
@@ -134,7 +134,6 @@ No modules.
 | [aws_service_discovery_http_namespace.namespace](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/service_discovery_http_namespace) | resource |
 | [aws_service_discovery_private_dns_namespace.namespace](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/service_discovery_private_dns_namespace) | resource |
 | [aws_service_discovery_public_dns_namespace.namespace](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/service_discovery_public_dns_namespace) | resource |
-| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
 | [aws_vpc.vpc](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc) | data source |
 
 ## Inputs
