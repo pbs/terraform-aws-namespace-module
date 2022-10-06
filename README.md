@@ -6,7 +6,7 @@
 
 ```hcl
 module "namespace" {
-    source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+    source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 }
 ```
 
@@ -44,7 +44,7 @@ Integrate this module like so:
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   # Tagging Parameters
   organization = var.organization
@@ -60,7 +60,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "private"
   name = "example.private"
@@ -79,7 +79,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "public"
   name = "example.org"
@@ -98,7 +98,7 @@ module "namespace" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.2`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
@@ -157,3 +157,4 @@ No modules.
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the CloudMap Namespace |
 | <a name="output_hosted_zone"></a> [hosted\_zone](#output\_hosted\_zone) | Hosted Zone of the CloudMap Namespace |
 | <a name="output_id"></a> [id](#output\_id) | ID of the CloudMap Namespace |
+| <a name="output_name"></a> [name](#output\_name) | Name of the CloudMap Namespace |

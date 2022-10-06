@@ -2,6 +2,10 @@ output "id" {
   description = "ID of the CloudMap Namespace"
   value       = local.id
 }
+output "name" {
+  description = "Name of the CloudMap Namespace"
+  value       = local.name
+}
 output "arn" {
   description = "ARN of the CloudMap Namespace"
   value       = local.arn
