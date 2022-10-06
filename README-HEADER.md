@@ -1,13 +1,13 @@
-# PBS TF namespace module
+# PBS TF Namespace Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "namespace" {
-    source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
-}
+github.com/pbs/terraform-aws-namespace-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -109,3 +109,4 @@ Below is automatically generated documentation on this Terraform module using [t
 ---
 
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
+[cloudmap-docs]: https://docs.aws.amazon.com/cloud-map/latest/dg/what-is-cloud-map.html

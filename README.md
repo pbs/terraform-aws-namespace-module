@@ -1,13 +1,13 @@
-# PBS TF namespace module
+# PBS TF Namespace Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "namespace" {
-    source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
-}
+github.com/pbs/terraform-aws-namespace-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -44,7 +44,7 @@ Integrate this module like so:
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   # Tagging Parameters
   organization = var.organization
@@ -60,7 +60,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "private"
   name = "example.private"
@@ -79,7 +79,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.0.2"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "public"
   name = "example.org"
@@ -98,7 +98,7 @@ module "namespace" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.2`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
@@ -109,6 +109,7 @@ Below is automatically generated documentation on this Terraform module using [t
 ---
 
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
+[cloudmap-docs]: https://docs.aws.amazon.com/cloud-map/latest/dg/what-is-cloud-map.html
 
 ## Requirements
 
@@ -121,7 +122,7 @@ Below is automatically generated documentation on this Terraform module using [t
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.26.0 |
 
 ## Modules
 
@@ -140,7 +141,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment (sharedtools, dev, staging, prod) | `string` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment (sharedtools, dev, staging, qa, prod) | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | Organization using this module. Used to prefix tags so that they are easily identified as being from your organization | `string` | n/a | yes |
 | <a name="input_product"></a> [product](#input\_product) | Tag used to group resources according to product | `string` | n/a | yes |
 | <a name="input_repo"></a> [repo](#input\_repo) | Tag used to point to the repo using this module | `string` | n/a | yes |
@@ -157,3 +158,4 @@ No modules.
 | <a name="output_arn"></a> [arn](#output\_arn) | ARN of the CloudMap Namespace |
 | <a name="output_hosted_zone"></a> [hosted\_zone](#output\_hosted\_zone) | Hosted Zone of the CloudMap Namespace |
 | <a name="output_id"></a> [id](#output\_id) | ID of the CloudMap Namespace |
+| <a name="output_name"></a> [name](#output\_name) | Name of the CloudMap Namespace |
