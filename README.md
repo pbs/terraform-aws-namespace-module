@@ -1,13 +1,13 @@
-# PBS TF namespace module
+# PBS TF Namespace Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "namespace" {
-    source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
-}
+github.com/pbs/terraform-aws-namespace-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -122,7 +122,7 @@ Below is automatically generated documentation on this Terraform module using [t
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.26.0 |
 
 ## Modules
 
@@ -141,7 +141,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment (sharedtools, dev, staging, prod) | `string` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment (sharedtools, dev, staging, qa, prod) | `string` | n/a | yes |
 | <a name="input_organization"></a> [organization](#input\_organization) | Organization using this module. Used to prefix tags so that they are easily identified as being from your organization | `string` | n/a | yes |
 | <a name="input_product"></a> [product](#input\_product) | Tag used to group resources according to product | `string` | n/a | yes |
 | <a name="input_repo"></a> [repo](#input\_repo) | Tag used to point to the repo using this module | `string` | n/a | yes |
