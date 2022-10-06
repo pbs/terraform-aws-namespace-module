@@ -109,3 +109,4 @@ Below is automatically generated documentation on this Terraform module using [t
 ---
 
 [terraform-docs]: https://github.com/terraform-docs/terraform-docs
+[cloudmap-docs]: https://docs.aws.amazon.com/cloud-map/latest/dg/what-is-cloud-map.html
