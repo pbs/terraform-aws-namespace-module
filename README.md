@@ -7,7 +7,7 @@
 Use this URL for the source of the module. See the usage examples below for more details.
 
 ```hcl
-github.com/pbs/terraform-aws-namespace-module?ref=0.1.3
+github.com/pbs/terraform-aws-namespace-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -44,7 +44,7 @@ Integrate this module like so:
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.1.3"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   # Tagging Parameters
   organization = var.organization
@@ -60,7 +60,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.1.3"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "private"
   name = "example.private"
@@ -79,7 +79,7 @@ module "namespace" {
 
 ```hcl
 module "namespace" {
-  source = "github.com/pbs/terraform-aws-namespace-module?ref=0.1.3"
+  source = "github.com/pbs/terraform-aws-namespace-module?ref=x.y.z"
 
   type = "public"
   name = "example.org"
@@ -98,7 +98,7 @@ module "namespace" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.1.3`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
